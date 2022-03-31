@@ -20,3 +20,5 @@ Imports:
     grDevices,
     glue,
     assertthat
+URL: https://github.com/pablotis/comunicacion
+BugReports: https://github.com/pablotis/comunicacion/issues
