@@ -1,6 +1,15 @@
 
 
-### Paletas institucionales
+#' Funcion para extraer colores de la dnmye como colores hex
+#'
+#' @param palette Nombre de la paleta de colores en dnmye_paletas. Se puede optar por *c2_continuo*, *c2_contraste* o *c10_todos*
+#' @param reverse *TRUE* indica que la peleta debe ser invertida
+#' @param ... Argumentos adicionales para definir con colorRampPalette()
+#' @return
+#' Paleta de colores institucionales para la Republica de Argentina
+#' @export
+#'
+#' @examples
 
 dnmye_paletas <- function(palette = "c10_todos", reverse = FALSE, ...) {
 

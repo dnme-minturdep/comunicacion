@@ -1,6 +1,14 @@
 
-### Colores institucionales
-
+#' Funcion para extraer la paleta institucional de la dnmye como colores hex
+#'
+#' @param ... Nombre del color. Las posibilidades son *rojo*, *naranja*, *amarillo*,
+#' *verde claro*, *verde_oscuro*, *violeta*, *celeste*, *gris oscuro*, *gris medio*,
+#' y *gris claro*.
+#' @return
+#' Paleta de colores institucionales para la Republica de Argentina
+#' @export
+#'
+#' @examples
 dnmye_colores <- function(...) {
 
   ### Lista de colores de la dnmye
