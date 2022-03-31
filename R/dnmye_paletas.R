@@ -13,6 +13,8 @@
 
 dnmye_paletas <- function(palette = "c10_todos", reverse = FALSE, ...) {
 
+  rlang::check_installed("grDevices", reason = "Para usar `dnmye_paletas()`")
+
   ### Paleta de colores
   paletas <- list(
 

@@ -19,6 +19,10 @@ Config/testthat/edition: 3
 Imports: 
     grDevices,
     glue,
-    assertthat
+    assertthat,
+    rlang
 URL: https://github.com/pablotis/comunicacion
 BugReports: https://github.com/pablotis/comunicacion/issues
+Depends: 
+    R (>= 2.10)
+LazyData: true

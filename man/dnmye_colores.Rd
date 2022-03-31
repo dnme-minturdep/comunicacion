@@ -17,3 +17,8 @@ Paleta de colores institucionales para la Republica de Argentina
 \description{
 Funcion para extraer la paleta institucional de la dnmye como colores hex
 }
+\examples{
+### Extraigo el código hex del color institucional celeste
+
+dnmye_colores("celeste")
+}
