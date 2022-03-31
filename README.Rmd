@@ -18,38 +18,51 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of comunicacion is to ...
 
-## Installation
+`{comunicacion}` ofrece herramientas que facilitan la visualización de datos en la Dirección Nacional de Mercados y Estadísticas (DNMyE-MINTURDEP)
 
-You can install the development version of comunicacion from [GitHub](https://github.com/) with:
+
+#### Colores institucionales
+<a><img src='man/figures/paleta_institucional_1.png' height="250" /></a>
+
+<a><img src='man/figures/paleta_institucional_2.png' height="250" /></a>
+
+
+## Instrucciones de instalación :building_construction:
+
+Versión en desarrollo:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("pablotis/comunicacion")
+devtools::install_github("d4t4tur/comunicacion")
 ```
 
-## Example
+## Funciones :test_tube:
 
-This is a basic example which shows you how to solve a common problem:
+- **`dnmye_colores()`**: Funcion para extraer los colores institucionales de la dnmye como colores hex
 
-```{r example}
+- **`dnmye_paletas()`**: Funcion para extraer paletas de colores colores institucionales de la dnmye como colores hex
+
+- **`scale_color_dnmye()`**: Constructor de escala de colores de contorno (argumento color) para la dnmye
+
+- **`scale_fill_dnmye()`**: Constructor de escala de colores de relleno (argumento fill) para la dnmye
+
+
+## Modo de uso
+
+Estos son ejemplos básicos sobre cómo utilizar las funciones de la librería:
+
+
+```{r}
 library(comunicacion)
-## basic example code
+
+# Obtengo la paleta completa
+comunicacion::dnmye_colores()
+#comunicaion::
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## Cómo contribuir con el proyecto :twisted_rightwards_arrows:
 
-```{r cars}
-summary(cars)
-```
+Para colaborar en este proyecto, se recomienda hacer un Fork, trabajar sobre ese repositorio y, antes de hacer el pull request, correr el `devtools::check()` para garantizar que no haya conflictos.
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
 
-You can also embed plots, for example:
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
