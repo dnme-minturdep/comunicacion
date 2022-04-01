@@ -1,0 +1,344 @@
+/* --------------------------------- */
+/* CSS template for paged template */
+/* --------------------------------- */
+
+/* -------------------- CSS variables ---------------------- */
+:root {
+    --background: transparent;
+    --pagedjs-width: 210mm;
+    --pagedjs-height: 297mm;
+    --color-paper: white;
+    --color-mbox: rgba(0, 0, 0, 0.2);
+    --running-title-width: 2in;
+    --screen-pages-spacing: 5mm;
+    --main-color: #37BBED;
+    --second-color: #50535C;
+    --third-color: #AAAAAA;
+    --forth-color: #50535C;
+    --main-font: "Encode Sans Normal";
+    --header-font: "Encode Sans Normal";
+  }
+
+/* ---------------------- For debugging -------------------- */
+/* two pages in a row if possible on screen */
+@media screen {
+  body {
+      background-color: var(--background);
+      margin: var(--screen-pages-spacing) auto 0 auto;
+  }
+  .pagedjs_pages {
+      display: flex;
+      max-width: calc(var(--pagedjs-width) * 2);
+      flex: 0;
+      flex-wrap: wrap;
+      margin: 0 auto;
+  }
+  .pagedjs_page {
+      background-color: var(--color-paper);
+      box-shadow: 0 0 0 1px var(--color-mbox);
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin: auto auto var(--screen-pages-spacing) auto;
+  }
+}
+
+/* when a row can hold two pages, start first page on the right */
+@media screen and (min-width: 12.32in) {
+  .pagedjs_page {
+      margin: auto 0 var(--screen-pages-spacing) 0;
+  }
+  .pagedjs_first_page {
+      margin-left: var(--pagedjs-width);
+  }
+}
+
+/* ------------------------ Pages -------------------------- */
+/* page size */
+@page {
+    size: 210mm 297mm; /* var(--pagedjs-width) doesn't work in browser when printing */
+  }
+
+
+/* string variables */
+h1.title {
+  string-set: h1-title content(text);
+}
+
+.shorttitle1 {
+  string-set: h1-text content(text);
+}
+
+/* normal page */
+@page {
+
+    @top-center {
+    content: string(title-text);
+	/*text-align: justify;*/
+    font-family: var(--main-font);
+    color: var(--third-color);
+  }
+
+
+}
+
+/* counter */
+@page:left {
+
+
+    @bottom-left {
+      content: counter(page);
+      color: var(--main-color);
+      font-size: 14pt;
+      font-weight: bold;
+      margin-left: -24%;
+      margin-bottom: 22%;
+      padding-left: 10%;
+      margin-right: 70%;
+    }
+
+    @bottom-center {
+      content: "";
+    }
+
+    @bottom-right {
+      content: "";
+    }
+}
+
+
+
+
+/* ------------------------ Front Cover --------------------- */
+
+/*front-cover es el logo y front-cover-2 es el fondo*/
+@page:first{
+    background-color: #ffffff;
+    background-image: var(--front-cover), var(--front-cover-2);
+    background-repeat: no-repeat, no-repeat;
+    /*background-position: 8cm 25cm, 0cm 0cm;*/
+    background-position: 50% 90%, 0cm 0cm;
+    background-size: 8cm, cover;
+
+    @top-left-corner {
+      display: none;
+    }
+
+    @top-left {
+      display: none;
+    }
+
+    @top-center {
+      display: none;
+    }
+
+    @top-right {
+      display: none;
+    }
+
+    @top-right-corner {
+      display: none;
+    }
+
+    @bottom-right {
+      display: none;
+    }
+
+    @bottom-left {
+      display: none;
+    }
+  }
+
+
+/* ----------------------- Table of contents ----------------------- */
+.toc a {
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 14pt;
+  padding-right: .33em;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+    overflow-x: hidden;
+    margin-right: 0%;
+}
+
+.toc li li{
+  padding-left: 1em;
+}
+
+.toc ul, .toc a, .toc a::after {
+  background-color: #ffffff;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.toc ul > li > ul > li > a {
+  color: #000000;
+}
+
+/* page number */
+.toc a::after {
+  content: target-counter(attr(href), page);
+  float: right;
+  background: white;
+}
+
+.toc a.front-matter-ref::after {
+  content: target-counter(attr(href), page, lower-roman);
+}
+
+.toc .leaders::before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+}
+
+
+/* numbering */
+
+@page:nth(2){
+  @top-left{
+    display:none;
+  }
+
+  @top-center{
+    display: none;
+  }
+}
+
+/* title */
+.toc-title {
+  padding-top: 0cm;
+  padding-bottom: 0cm;
+  background-color: transparent;
+  background-image: url(../utils/portada_hoja2.png);
+  text-align: left;
+  margin-right: 0%;
+  margin-left: 0%;
+  color: var(--main-color);
+  margin-top: 0%;
+}
+
+
+/* ------------------------ Back Cover ---------------------- */
+@page back-cover {
+    margin: 0 0 0 0;
+    background-color: var(--main-color);
+    background-image: var(--back-cover);
+    background-repeat: no-repeat;
+    background-position: 15cm 23cm;
+    background-size: 4cm;
+}
+
+/*.back-cover {
+  /* page: back-cover;
+  page: 2
+}*/
+
+/* ------------------------ Fonts ---------------------------- */
+/* @import 'https://fonts.googleapis.com/css?family=Gelasio'; */
+/* @import 'https://fonts.googleapis.com/css?family=Inter'; */
+
+p, ul, a, ol {
+  font-family: var(--main-font);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--header-font);
+}
+
+
+/* ------------------------ Style ----------------------------- */
+/* colors */
+h1, h2, h3, h4 {
+    color: var(--main-color)
+}
+
+h2, h4 {
+    color: var(--second-color)
+}
+
+h3 {
+    color: var(--third-color)
+}
+
+h1.title, h1.subtitle, h2.author, h2.date {
+    color: #ffffff;
+}
+
+/* headers */
+h1.title {
+  font-size: 50pt;
+  margin-right: 5%;
+  margin-top: 40%;
+  font-weight: 500;
+}
+
+h1.subtitle {
+  margin-right: 15%;
+  font-size: 25pt;
+}
+
+h2.author {
+  margin-top: 10%;
+  font-size: 20pt;
+  font-weight: 300;
+}
+
+h2.date {
+  font-size: 16pt;
+  padding-left: 5%;
+  font-weight: normal;
+  margin-top: -140%;
+}
+
+/* normal headers */
+
+h1 {
+  font-size: 40pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+/* --------------------- CSS Fragmentation --------------------------- */
+/* page breaks; aka CSS fragmentation */
+.level1 {
+    break-before: page;
+  }
+
+  .section > h1, .section > h2, .section > h3, .section > h4, .section > h5, .section > h6 {
+    break-after: avoid;
+  }
+  .footenotes {
+    break-before: always;
+    break-after: always;
+  }
+  .figure {
+    break-inside: avoid;
+	page-break-inside: avoid;
+  }
+@media print {
+  table, ul, ol {
+    break-inside: avoid;
+  }
+}
+
+  /* do not break captions */
+  caption {
+    break-inside: avoid;
+    break-after: avoid;
+  }
+
+  /* misc elements */
+  .subtitle span {
+    font-size: .9em;
+  }
+  img {
+    max-width: 100%;
+  }
+

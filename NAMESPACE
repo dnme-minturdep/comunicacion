@@ -2,3 +2,4 @@
 
 export(dnmye_colores)
 export(dnmye_paletas)
+export(template_informe)

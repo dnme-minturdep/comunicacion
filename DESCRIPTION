@@ -22,7 +22,9 @@ Imports:
     grDevices,
     glue,
     assertthat,
-    rlang
+    rlang,
+    magick,
+    pagedown
 URL: https://github.com/pablotis/comunicacion
 BugReports: https://github.com/pablotis/comunicacion/issues
 Depends: 
