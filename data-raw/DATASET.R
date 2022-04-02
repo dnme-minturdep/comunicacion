@@ -1,4 +1,6 @@
-## code to prepare `DATASET` dataset goes here
+
+# Muestra de la base de la Encuesta de Viajes y Turismo de los Hogares ~~~
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 datafile <- system.file("toy_evyth.rds", package = "comunicacion")
 toy_evyth <- readRDS(datafile)
@@ -12,4 +14,23 @@ levels(toy_evyth$localidad_destino) <- iconv(
 )
 
 usethis::use_data(toy_evyth, overwrite = TRUE)
+
+
+
+#             Colores Institucionales de la DNMyE             ~~~ ----
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+colores <- c(
+  `rojo`         = "#EE3D8F",
+  `naranja`      = "#F7941E",
+  `amarillo`     = "#FFD100",
+  `verde claro`  = "#D7DF23",
+  `verde oscuro` = "#50B8B1",
+  `violeta`      = "#9283BE",
+  `celeste`      = "#37BBED",
+  `gris oscuro`  = "#50535C",
+  `gris medio`   = "#AAAAAA",
+  `gris claro`   = "#E7E7E7")
+
+usethis::use_data(colores, paletas, overwrite = TRUE, internal = TRUE)
 
