@@ -25,7 +25,11 @@ Imports:
     rlang,
     magick,
     pagedown,
-    ggplot2
+    ggplot2,
+    fs,
+    usethis,
+    whisker,
+    xfun
 URL: https://github.com/pablotis/comunicacion
 BugReports: https://github.com/pablotis/comunicacion/issues
 Depends: 
