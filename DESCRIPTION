@@ -24,7 +24,8 @@ Imports:
     assertthat,
     rlang,
     magick,
-    pagedown
+    pagedown,
+    ggplot2
 URL: https://github.com/pablotis/comunicacion
 BugReports: https://github.com/pablotis/comunicacion/issues
 Depends: 

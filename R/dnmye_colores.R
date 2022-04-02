@@ -9,24 +9,12 @@
 #' @export
 #'
 #' @examples
-#' ### Extraigo el código hex del color institucional celeste
+#' ### Obtener el código hex del color institucional celeste
+#' dnmye_colores()
 #'
-#' dnmye_colores("celeste")
+#' dnmye_colores("rojo")
 
 dnmye_colores <- function(...) {
-
-  ### Lista de colores de la dnmye
-  colores <- c(
-    `rojo`         = "#EE3D8F",
-    `naranja`      = "#F7941E",
-    `amarillo`     = "#FFD100",
-    `verde claro`  = "#D7DF23",
-    `verde oscuro` = "#50B8B1",
-    `violeta`      = "#9283BE",
-    `celeste`      = "#37BBED",
-    `gris oscuro`  = "#50535C",
-    `gris medio`   = "#AAAAAA",
-    `gris claro`   = "#E7E7E7")
 
   cols <- c(...)
 

@@ -2,4 +2,5 @@
 
 export(dnmye_colores)
 export(dnmye_paletas)
+export(scale_color_dnmye)
 export(template_informe)
