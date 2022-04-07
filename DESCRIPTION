@@ -29,7 +29,8 @@ Imports:
     fs,
     usethis,
     whisker,
-    xfun
+    xfun,
+    magrittr
 URL: https://github.com/pablotis/comunicacion
 BugReports: https://github.com/pablotis/comunicacion/issues
 Depends: 

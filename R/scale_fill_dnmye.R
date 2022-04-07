@@ -9,6 +9,7 @@
 #' datafile <- system.file("toy_evyth.rds", package = "comunicacion")
 #' toy_evyth <- readRDS(datafile)
 #'
+#'library(magrittr)
 #'toy_evyth %>%
 #'  dplyr::mutate(region_destino = factor(region_destino,
 #'                                        labels = c("Ciudad de Buenos Aires",
@@ -23,20 +24,17 @@
 #'                               fill = region_destino)) +
 #'  ggplot2::geom_col(position = ggplot2::position_dodge()) +
 #'  scale_fill_dnmye()
-#'
-#'
-#'
-#'
-#'### Funcion
-#'scale_fill_dnmye <- function(palette = "c10_todos", discrete = TRUE, reverse = FALSE, ...) {
-#'
-#'  pal <- dnmye_paletas(palette = palette, reverse = reverse)
-#'
-#'  if (discrete) {
-#'    ggplot2::discrete_scale("fill", paste0("dnmye_", palette), palette = pal, ...)
-#'  } else {
-#'    ggplot2::scale_fill_gradientn(colors = pal(256), ...)
-#'  }
-#'}
-#'
 #' @export
+
+### Funcion
+scale_fill_dnmye <- function(palette = "c10_todos", discrete = TRUE, reverse = FALSE, ...) {
+
+  pal <- dnmye_paletas(palette = palette, reverse = reverse)
+
+  if (discrete) {
+    ggplot2::discrete_scale("fill", paste0("dnmye_", palette), palette = pal, ...)
+  } else {
+    ggplot2::scale_fill_gradientn(colors = pal(256), ...)
+  }
+}
+
