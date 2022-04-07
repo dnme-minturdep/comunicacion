@@ -30,7 +30,8 @@ Imports:
     usethis,
     whisker,
     xfun,
-    magrittr
+    magrittr,
+    dplyr
 URL: https://github.com/pablotis/comunicacion
 BugReports: https://github.com/pablotis/comunicacion/issues
 Depends: 
