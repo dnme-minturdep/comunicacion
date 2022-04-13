@@ -21,7 +21,7 @@ datos en la Dirección Nacional de Mercados y Estadísticas
 Versión en desarrollo:
 
 ``` r
-devtools::install_github("d4t4tur/comunicacion")
+devtools::install_github("dnme-minturdep/comunicacion")
 ```
 
 ## Funciones :test\_tube:

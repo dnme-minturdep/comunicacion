@@ -32,8 +32,8 @@ Imports:
     xfun,
     magrittr,
     dplyr
-URL: https://github.com/pablotis/comunicacion
-BugReports: https://github.com/pablotis/comunicacion/issues
+URL: https://github.com/dnme-minturdep/comunicacion
+BugReports: https://github.com/dnme-minturdep/comunicacion/issues
 Depends: 
     R (>= 2.10)
 LazyData: true
