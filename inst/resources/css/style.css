@@ -75,7 +75,6 @@ h1.title {
 
     @top-center {
     content: string(title-text);
-	/*text-align: justify;*/
     font-family: var(--main-font);
     color: var(--third-color);
   }
@@ -245,7 +244,9 @@ h1.title {
 /* @import 'https://fonts.googleapis.com/css?family=Inter'; */
 
 body {
+  font-family: var(--main-font);
   font-size: 12pt;
+  text-align: justify;
 }
 
 p, ul, a, ol {
