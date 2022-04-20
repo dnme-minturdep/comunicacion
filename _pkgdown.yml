@@ -1,0 +1,14 @@
+url: https://dnme-minturdep.github.io/comunicacion/
+template:
+  bootstrap: 5
+  bslib:
+    bg: "white"
+    fg: "#50535C"
+    primary:  "#37BBED"
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Encode Sans"}
+    code_font: {google: "JetBrains Mono"}
+navbar:
+  bg: primary
+
+

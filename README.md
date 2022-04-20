@@ -10,21 +10,18 @@
 datos en la Dirección Nacional de Mercados y Estadísticas
 (DNMyE-MINTURDEP)
 
-#### Colores institucionales
-
-<a><img src='man/figures/paleta_institucional_1.png' height="250" /></a>
-
-<a><img src='man/figures/paleta_institucional_2.png' height="250" /></a>
-
-## Instrucciones de instalación :building\_construction:
+## Instrucciones de instalación
 
 Versión en desarrollo:
 
 ``` r
-devtools::install_github("dnme-minturdep/comunicacion")
+devtools::install_github("d4t4tur/comunicacion")
 ```
 
-## Funciones :test\_tube:
+## Funciones
+
+-   **`crear_informe()`**: Función para crear y abrir un template de
+    informes para la DNMyE
 
 -   **`dnmye_colores()`**: Funcion para extraer los colores
     institucionales de la dnmye como colores hex
@@ -50,10 +47,22 @@ library(comunicacion)
 comunicacion::dnmye_colores()
 #>  [1] "#EE3D8F" "#F7941E" "#FFD100" "#D7DF23" "#50B8B1" "#9283BE" "#37BBED"
 #>  [8] "#50535C" "#AAAAAA" "#E7E7E7"
-#comunicaion::
+
+# El código HEX para un color específico 
+comunicacion::dnmye_colores("celeste")
+#> [1] "#37BBED"
 ```
 
-## Cómo contribuir con el proyecto :twisted\_rightwards\_arrows:
+#### Colores institucionales
+
+Paletas de colores primarios y secundarios del manual de estilo de
+Presidencia la Nación.
+
+<a><img src='man/figures/paleta_institucional_1.png' height="250" /></a>
+
+<a><img src='man/figures/paleta_institucional_2.png' height="250" /></a>
+
+## Cómo contribuir con el proyecto
 
 Para colaborar en este proyecto, se recomienda hacer un Fork, trabajar
 sobre ese repositorio y, antes de hacer el pull request, correr el
