@@ -58,7 +58,6 @@ comunicacion::dnmye_colores()
 # El código HEX para un color específico 
 comunicacion::dnmye_colores("celeste")
 
-
 ```
 
 
@@ -71,6 +70,15 @@ Paletas de colores primarios y secundarios del manual de estilo de Presidencia l
 <a><img src='man/figures/paleta_institucional_2.png' height="250" /></a>
 
 
+```{r}
+
+# Explorar paleta de colores institucionales
+
+scales::show_col(dnmye_colores())
+
+
+
+```
 
 ## Cómo contribuir con el proyecto
 

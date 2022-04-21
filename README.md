@@ -64,6 +64,14 @@ Presidencia la Nación.
 
 <a><img src='man/figures/paleta_institucional_2.png' height="250" /></a>
 
+``` r
+# Explorar paleta de colores institucionales
+
+scales::show_col(dnmye_colores())
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
 ## Cómo contribuir con el proyecto
 
 Para colaborar en este proyecto, se recomienda hacer un Fork, trabajar
