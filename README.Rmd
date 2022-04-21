@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 
-`{comunicacion}` ofrece herramientas que facilitan la visualización de datos en la Dirección Nacional de Mercados y Estadísticas (DNMyE-MINTURDEP)
+`{comunicacion}` ofrece herramientas que facilitan la visualización de datos en la [Dirección Nacional de Mercados y Estadísticas](https://www.yvera.tur.ar/sinta/) del [Ministerio de Turismo y Deportes de la Nación](https://www.argentina.gob.ar/turismoydeportes).
 
 
 
