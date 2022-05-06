@@ -33,6 +33,7 @@
       flex: 0;
       flex-wrap: wrap;
       margin: 0 auto;
+
   }
   .pagedjs_page {
       background-color: var(--color-paper);
@@ -40,6 +41,7 @@
       flex-shrink: 0;
       flex-grow: 0;
       margin: auto auto var(--screen-pages-spacing) auto;
+
   }
 }
 
@@ -221,6 +223,7 @@ h1.title {
   margin-left: 0%;
   color: var(--main-color);
   margin-top: 0%;
+
 }
 
 
@@ -246,6 +249,7 @@ h1.title {
 body {
   font-family: var(--main-font);
   font-size: 12pt;
+  text-align: justify;
 }
 
 p, ul, a, ol {
