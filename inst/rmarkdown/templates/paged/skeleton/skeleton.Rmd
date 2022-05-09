@@ -34,18 +34,32 @@ knitr::opts_chunk$set(echo = TRUE)
 **Esto es un ejemplo.** Acá va el texto en función del contenido específico
 
 
-blablablablablablablablablablablablablablablablablablablablablablablablabl
-blablablablablablablablablablablablablablablablablablablablablablablablabl
-blablablablablablablablablablablablablablablablablablablablablablablablabl
-blablablablablablablablablablablablablablablablablablablablablablablablabl
+En el presente informe se muestran las estimaciones para el trimestre de del turismo interno,
+realizado por los residentes en los grandes aglomerados urbanos del país, donde reside el
+62% de la población argentina, en base a los resultados de la Encuesta de Viajes y Turismo de
+los Hogares (EVyTH).
+Como es de público conocimiento, a partir del 20 del mes de marzo de 2020 se establecieron
+restricciones a la circulación de las personas dentro del país con el objetivo de reducir la
+exposición al contagio del COVID-19 en el marco de la emergencia sanitaria en virtud de la
+pandemia declarada por la ORGANIZACIÓN MUNDIAL DE LA SALUD (OMS). En
+efecto, el DNU 297/2020 y sus modificatorias dictaron el aislamiento social preventivo y
+obligatorio y con ello se limitó el movimiento de la ciudadanía con fines turísticos dentro del
+territorio nacional. Cabe mencionar que a lo largo del 2021 se fueron flexibilizando las
 
 #### Borrar este contenido ejemplo y reemplazar
 
 
-blablablablablablablablablablablablablablablablablablablablablablablablabl
-blablablablablablablablablablablablablablablablablablablablablablablablabl
-blablablablablablablablablablablablablablablablablablablablablablablablabl
-blablablablablablablablablablablablablablablablablablablablablablablablabl
+En el presente informe se muestran las estimaciones para el trimestre de del turismo interno,
+realizado por los residentes en los grandes aglomerados urbanos del país, donde reside el
+62% de la población argentina, en base a los resultados de la Encuesta de Viajes y Turismo de
+los Hogares (EVyTH).
+Como es de público conocimiento, a partir del 20 del mes de marzo de 2020 se establecieron
+restricciones a la circulación de las personas dentro del país con el objetivo de reducir la
+exposición al contagio del COVID-19 en el marco de la emergencia sanitaria en virtud de la
+pandemia declarada por la ORGANIZACIÓN MUNDIAL DE LA SALUD (OMS). En
+efecto, el DNU 297/2020 y sus modificatorias dictaron el aislamiento social preventivo y
+obligatorio y con ello se limitó el movimiento de la ciudadanía con fines turísticos dentro del
+territorio nacional. Cabe mencionar que a lo largo del 2021 se fueron flexibilizando las
 
 
 ### Título de tercer nivel {-}

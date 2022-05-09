@@ -250,11 +250,12 @@ body {
   font-family: var(--main-font);
   font-size: 12pt;
   text-align: justify;
+  text-align-last: left;
+  -moz-text-align-last: left;
 }
 
 p, ul, a, ol {
   font-family: var(--main-font);
-  text-align: justify-all;
 }
 
 h1, h2, h3, h4 {
