@@ -1,5 +1,3 @@
-
-
 #' Generacion automatica de tabs en Rmd
 #' @description
 #' Permite generar automáticamente el código necesario para agrupar múltiples
@@ -14,8 +12,9 @@
 #' @param chunk_props	named list with additional parameters that correspond to all those available in rmarkdown chunks (fig.align, fig.width, ...).
 #' @param is_output_distill	boolean. is output a distill article.
 #'
-#'@export
+#' @export
 #'
+
 rmdautotabs <- function (input_data, panel_name, ...,
                          tabset_title = "",
                          tabset_props = ".tabset-fade .tabset-pills",
