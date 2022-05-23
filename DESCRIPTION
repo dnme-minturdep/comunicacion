@@ -33,7 +33,8 @@ Imports:
     xfun,
     magrittr,
     dplyr,
-    showtext
+    showtext,
+    sysfonts
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues
