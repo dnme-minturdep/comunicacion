@@ -3,6 +3,7 @@
 export(crear_informe)
 export(dnmye_colores)
 export(dnmye_paletas)
+export(rmdautotabs)
 export(scale_color_dnmye)
 export(scale_fill_dnmye)
 export(template_informe)
