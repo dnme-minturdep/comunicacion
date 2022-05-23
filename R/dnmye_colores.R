@@ -12,7 +12,7 @@
 #' ### Obtener el código hex del color institucional celeste
 #' dnmye_colores()
 #'
-#' dnmye_colores("rojo")
+#' dnmye_colores("rosa")
 
 dnmye_colores <- function(...) {
 
@@ -24,7 +24,7 @@ dnmye_colores <- function(...) {
 
   if (!is.null(cols) & is.character(cols)) {
     assertthat::assert_that(cols %in% c(names(colores)),
-                            msg = glue::glue("el valor debe encontrarse entre las siguientes opciones: {paste0(names(dnmye_colores), collapse = ', ')}"))
+                            msg = glue::glue("el valor debe encontrarse entre las siguientes opciones: {paste0(names(colores), collapse = ', ')}"))
 
     return(unname(colores[cols]))
   }
@@ -32,7 +32,7 @@ dnmye_colores <- function(...) {
   if (!is.null(cols) & is.numeric(cols)){
 
     assertthat::assert_that(unique(cols) %in% c(1:10),
-                            msg = glue::glue("Los valores numericos van de 1 a {length(dnmye_colores)}"))
+                            msg = glue::glue("Los valores numericos van de 1 a {length(colores)}"))
 
     return(unname(colores[cols]))
   }

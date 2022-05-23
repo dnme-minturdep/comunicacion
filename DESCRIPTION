@@ -35,6 +35,7 @@ Imports:
     dplyr,
     showtext,
     sysfonts
+    purrr
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues

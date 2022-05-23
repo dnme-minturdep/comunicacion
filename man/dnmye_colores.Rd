@@ -21,5 +21,5 @@ Funcion para extraer la paleta institucional de la dnmye como colores hex
 ### Obtener el código hex del color institucional celeste
 dnmye_colores()
 
-dnmye_colores("rojo")
+dnmye_colores("rosa")
 }

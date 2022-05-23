@@ -14,13 +14,13 @@ test_that("Nombre de los valores numericos usados en dnmye_colores", {
 
 
 test_that("Nombre de los valores de texto usados en dnmye_colores", {
-  expect_true(dnmye_colores("rojo") == "#EE3D8F")
+  expect_true(dnmye_colores("rosa") == "#EE3D8F")
   expect_true(dnmye_colores("naranja") == "#F7941E")
   expect_true(dnmye_colores("amarillo") == "#FFD100")
-  expect_true(dnmye_colores("verde claro") == "#D7DF23")
-  expect_true(dnmye_colores("verde oscuro") == "#50B8B1")
-  expect_true(dnmye_colores("violeta") == "#9283BE")
-  expect_true(dnmye_colores("celeste") == "#37BBED")
+  expect_true(dnmye_colores("pera") == "#D7DF23")
+  expect_true(dnmye_colores("azul verde") == "#50B8B1")
+  expect_true(dnmye_colores("purpura") == "#9283BE")
+  expect_true(dnmye_colores("cian") == "#37BBED")
   expect_true(dnmye_colores("gris oscuro") == "#50535C")
   expect_true(dnmye_colores("gris medio") == "#AAAAAA")
   expect_true(dnmye_colores("gris claro") == "#E7E7E7")
