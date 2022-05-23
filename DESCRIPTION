@@ -32,7 +32,8 @@ Imports:
     whisker,
     xfun,
     magrittr,
-    dplyr
+    dplyr,
+    showtext
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues
