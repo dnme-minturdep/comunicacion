@@ -34,7 +34,7 @@ Imports:
     magrittr,
     dplyr,
     showtext,
-    sysfonts
+    sysfonts,
     purrr
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
