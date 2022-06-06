@@ -17,7 +17,7 @@ Nación](https://www.argentina.gob.ar/turismoydeportes).
 Versión en desarrollo:
 
 ``` r
-devtools::install_github("d4t4tur/comunicacion")
+devtools::install_github("dnme-minturdep/comunicacion")
 ```
 
 ## Funciones

@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 Versión en desarrollo:
 
 ``` r
-devtools::install_github("d4t4tur/comunicacion")
+devtools::install_github("dnme-minturdep/comunicacion")
 ```
 
 ## Funciones  
