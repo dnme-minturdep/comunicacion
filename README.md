@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# {comunicacion} <a href="https://dnme-minturdep.github.io/herramientas/"><img src="man/figures/logo_comunicacion.png" align="right" height="360" /></a>
+# {comunicacion} <a href="https://dnme-minturdep.github.io/comunicacion/"><img src="man/figures/logo_comunicacion.png" align="right" height="360" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
