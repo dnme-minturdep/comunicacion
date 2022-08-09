@@ -365,3 +365,7 @@ h2 {
     max-width: 100%;
   }
 
+  /*gt tables align*/
+ .gt_table {
+  text-align-last: auto;
+ }
