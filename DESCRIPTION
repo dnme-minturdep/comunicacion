@@ -34,7 +34,9 @@ Imports:
     xfun,
     magrittr,
     dplyr,
-    purrr
+    purrr,
+    staplr,
+    pdftools
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues
