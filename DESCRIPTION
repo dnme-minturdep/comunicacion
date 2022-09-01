@@ -41,6 +41,6 @@ URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5.0)
 LazyData: true
 VignetteBuilder: knitr
