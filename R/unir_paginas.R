@@ -12,7 +12,7 @@
 #'    back_colour = "gris"
 #'  )
 #' }
-
+#' @export
 
 unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
 
