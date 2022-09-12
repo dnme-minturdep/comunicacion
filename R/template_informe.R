@@ -79,7 +79,6 @@ template_informe <- function(logo = "0",
     front_cover = c(logo, front_img),
     back_cover = c(logo, back_img),
     toc = TRUE,
-    toc_depth = 2,
     ...
   )
 
