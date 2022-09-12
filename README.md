@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# comunicacion
+# {comunicacion} <a href="https://dnme-minturdep.github.io/comunicacion/"><img src="man/figures/logo.png" align="right" height="360" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -37,6 +37,11 @@ devtools::install_github("dnme-minturdep/comunicacion")
 -   **`scale_fill_dnmye()`**: Constructor de escala de colores de
     relleno (argumento fill) para la dnmye
 
+-   **`rmdautotabs()`**: Permite generar automáticamente el código
+    necesario para agrupar múltiples fragmentos de Rmarkdown en
+    pestañas. Tomado de
+    [`{sknifedatar}`](https://github.com/rafzamb/sknifedatar)
+
 ## Modo de uso
 
 Estos son ejemplos básicos sobre cómo utilizar las funciones de la
@@ -51,8 +56,8 @@ comunicacion::dnmye_colores()
 #>  [8] "#50535C" "#AAAAAA" "#E7E7E7"
 
 # El código HEX para un color específico 
-comunicacion::dnmye_colores("celeste")
-#> [1] "#37BBED"
+comunicacion::dnmye_colores("azul verde")
+#> [1] "#50B8B1"
 ```
 
 #### Colores institucionales

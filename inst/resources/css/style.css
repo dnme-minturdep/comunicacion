@@ -63,24 +63,12 @@
 
 
 
-/* string variables */
-h1.title {
-  string-set: h1-title content(text);
-}
-
-.shorttitle1 {
-  string-set: h1-text content(text);
-}
-
 /* normal page */
 @page {
 
-    @top-center {
-    content: string(title-text);
-    font-family: var(--main-font);
-    color: var(--third-color);
+@top-center {
+    content: url("../img/logo_pagedown.svg");
   }
-
 
 }
 
@@ -108,7 +96,28 @@ h1.title {
     }
 }
 
+@page:right {
 
+
+    @bottom-right {
+      content: counter(page);
+      color: var(--main-color);
+      font-size: 14pt;
+      font-weight: bold;
+      margin-right: -24%;
+      margin-bottom: 22%;
+      padding-right: 10%;
+      margin-left: 70%;
+    }
+
+    @bottom-center {
+      content: "";
+    }
+
+    @bottom-left {
+      content: "";
+    }
+}
 
 
 /* ------------------------ Front Cover --------------------- */
@@ -356,3 +365,7 @@ h2 {
     max-width: 100%;
   }
 
+  /*gt tables align*/
+ .gt_table {
+  text-align-last: auto;
+ }

@@ -13,7 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-# comunicacion
+# {comunicacion} <a href="https://dnme-minturdep.github.io/comunicacion/"><img src="man/figures/logo.png" align="right" height="360" /></a>
+
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -28,7 +29,7 @@ knitr::opts_chunk$set(
 Versión en desarrollo:
 
 ``` r
-devtools::install_github("d4t4tur/comunicacion")
+devtools::install_github("dnme-minturdep/comunicacion")
 ```
 
 ## Funciones  
@@ -43,6 +44,7 @@ devtools::install_github("d4t4tur/comunicacion")
 
 - **`scale_fill_dnmye()`**: Constructor de escala de colores de relleno (argumento fill) para la dnmye
 
+- **`rmdautotabs()`**: Permite generar automáticamente el código necesario para agrupar múltiples fragmentos de Rmarkdown en pestañas. Tomado de [`{sknifedatar}`](https://github.com/rafzamb/sknifedatar)
 
 ## Modo de uso
 
@@ -56,7 +58,7 @@ library(comunicacion)
 comunicacion::dnmye_colores()
 
 # El código HEX para un color específico 
-comunicacion::dnmye_colores("celeste")
+comunicacion::dnmye_colores("azul verde")
 
 ```
 
