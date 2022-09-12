@@ -7,7 +7,6 @@
 #' @param logo_to_white Tranform logo color to white - logo must be SVG
 #' @param other_css Add an other CSS
 #' @param ... Arguments passed to pagedown::html_paged
-#'
 #' @return A pagedown template
 #' @export
 #'
