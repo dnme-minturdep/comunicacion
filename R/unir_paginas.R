@@ -48,7 +48,7 @@ unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
 
     temp <- tempfile()
 
-    download.file(topic_path, temp, quiet = T)
+    download.file(topic_path, temp, method = "curl", quiet = T)
 
     temp_back <- tempfile()
 
