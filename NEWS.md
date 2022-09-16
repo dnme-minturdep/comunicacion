@@ -1,3 +1,7 @@
+# comunicacion 0.0.0.9002
+
+* Se agrega función para `unir_paginas()` que identifica local/server (#22 @eliansoutu)
+
 # comunicacion 0.0.0.9.2
 
 * Se permite definir el toc_depth del `template_informe()` pasando el valor en el yaml del .Rmd (#20 @jgjuara)
