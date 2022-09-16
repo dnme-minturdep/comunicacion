@@ -17,26 +17,38 @@
 unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
 
   if (topic == "calidad") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/calidad_turistica_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/calidad_turistica_ct.pdf"
   } else if(topic == "competitividad hotelera") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/competitividad_hotelera_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/competitividad_hotelera_ct.pdf"
   } else if(topic == "eoh") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
   } else if(topic == "sector hotelero") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
   } else if(topic == "internacional") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/turismo_internacional_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/turismo_internacional_ct.pdf"
   } else if(topic == "interno") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/turismo_interno_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/turismo_interno_ct.pdf"
   } else if(topic == "inversiones") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/inversiones_turisticas_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/inversiones_turisticas_ct.pdf"
   } else if(topic == "naturaleza") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/turismo_naturaleza_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/turismo_naturaleza_ct.pdf"
   } else if(topic == "naturaleza apn") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/turismo_naturaleza_apn_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/turismo_naturaleza_apn_ct.pdf"
   } else if(topic == "generico") {
-    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/generico_st.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/generico_st.pdf"
   }
+
+
+  temp <- tempfile()
+
+  download.file(topic_path, temp, method = "curl", quiet = T)
+
+  temp_back <- tempfile()
+
+  download.file(ifelse(back_colour == "gris",
+           "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/contratapa.pdf",
+           "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/contra_tapa.pdf"), temp_back,
+           method = "curl", quiet = T)
 
   staplr::select_pages(1, input_filepath = input, output_filepath = "cover.pdf")
 
@@ -44,14 +56,17 @@ unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
 
   staplr::select_pages(2:n_pages, input_filepath = input, output_filepath = "body.pdf")
 
+
   suppressWarnings(staplr::staple_pdf(input_files = c("cover.pdf",
-                                                      topic_path,
+                                                      temp,
                                                       "body.pdf",
-                                                      ifelse(back_colour == "gris",
-                                                             "/srv/shiny-server/recursos/hojas_institucionales/contratapa.pdf",
-                                                             "/srv/shiny-server/recursos/hojas_institucionales/contra_tapa.pdf")),
+                                                      temp_back),
                                       output_filepath = save_as))
 
-  invisible(file.remove(c("cover.pdf","body.pdf")))
+  invisible(file.remove(c("cover.pdf","body.pdf",temp,temp_back)))
+
+  if (file.exists(save_as)) {
+    message("PDF generado correctamente")
+  }
 
 }
