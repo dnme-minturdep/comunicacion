@@ -39,9 +39,10 @@ colores <- c(
 
 paletas <- list(
 
-  `c2_continuo`  = c("#50B8B1", "#9283BE"),
-  `c2_contraste` = c("#50B8B1", "#EE3D8F"),
-  `c10_todos`     = c("#EE3D8F", "#F7941E", "#FFD100", "#D7DF23", "#50B8B1",
-                      "#9283BE", "#37BBED", "#50535C", "#AAAAAA", "#E7E7E7"))
+  `cualitativa` = c("#EE3D8F", "#F7941E", "#FFD100", "#D7DF23",
+                    "#50B8B1", "#9283BE", "#37BBED"),
+  `secuencial`  = c("#50B8B1", "#37BBED"),
+  `dicotomica`  = c("#EE3D8F", "#50B8B1"),
+  `divergente`  = c("#EE3D8F", "#AAAAAA", "#37BBED"))
 
 usethis::use_data(colores, paletas, overwrite = TRUE, internal = TRUE)

@@ -4,7 +4,12 @@
 \alias{scale_color_dnmye}
 \title{Constructor de escala de colores de contorno (color) para la dnmye}
 \usage{
-scale_color_dnmye(palette = "c10_todos", discrete = TRUE, reverse = FALSE, ...)
+scale_color_dnmye(
+  palette = "cualitativa",
+  discrete = TRUE,
+  reverse = FALSE,
+  ...
+)
 }
 \arguments{
 \item{palette}{Nombre de la paleta de colores en dnmye_paleta}

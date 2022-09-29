@@ -4,14 +4,19 @@
 \alias{scale_fill_dnmye}
 \title{Constructor de escala de colores de contorno (color) para la dnmye}
 \usage{
-scale_fill_dnmye(palette = "c10_todos", discrete = TRUE, reverse = FALSE, ...)
+scale_fill_dnmye(
+  palette = "cualitativa",
+  discrete = TRUE,
+  reverse = FALSE,
+  ...
+)
 }
 \arguments{
-\item{palette}{Nombre de la paleta de colores en dnmye_paleta}
+\item{palette}{Nombre de la paleta de colores en \code{dnmye_paleta()}. Las opciones son \emph{cualitativa} (por default), \emph{secuencial}, \emph{dicotomica} y \emph{divergente}}
 
-\item{discrete}{TRUE indica que la variable es discreta}
+\item{discrete}{TRUE (por default) indica que la variable es discreta}
 
-\item{reverse}{\emph{TRUE} indica que la peleta debe ser invertida}
+\item{reverse}{\emph{TRUE} invierte el orden de asignación de colores en la paleta}
 
 \item{...}{Argumentos adicionales para definir en discrete_scale() o
 scale_color_gradientn(), respectivamente, cuando discrete es TRUE o FALSE}
@@ -37,5 +42,5 @@ toy_evyth \%>\%
                               y = cantidad_personas,
                               fill = region_destino)) +
  ggplot2::geom_col(position = ggplot2::position_dodge()) +
- scale_fill_dnmye()
+ scale_fill_dnmye(palette = "cualitativa", discrete = TRUE)
 }

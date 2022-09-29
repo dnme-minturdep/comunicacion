@@ -14,7 +14,7 @@
 #' scale_color_dnmye()
 
 
-scale_color_dnmye <- function(palette = "c10_todos", discrete = TRUE, reverse = FALSE, ...) {
+scale_color_dnmye <- function(palette = "cualitativa", discrete = TRUE, reverse = FALSE, ...) {
 
   pal <- comunicacion::dnmye_paletas(palette = palette, reverse = reverse)
 

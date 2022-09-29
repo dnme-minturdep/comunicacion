@@ -4,12 +4,12 @@
 \alias{dnmye_colores}
 \title{Funcion para extraer la paleta institucional de la dnmye como colores hex}
 \usage{
-dnmye_colores(...)
+dnmye_colores(..., nombre = FALSE)
 }
 \arguments{
-\item{...}{Nombre del color. Las posibilidades son \emph{rojo}, \emph{naranja}, \emph{amarillo},
-\emph{verde claro}, \emph{verde_oscuro}, \emph{violeta}, \emph{celeste}, \emph{gris oscuro}, \emph{gris medio},
-y \emph{gris claro}.}
+\item{...}{Nombre o número del color. Las posibilidades son \emph{rosa}, \emph{naranja}, \emph{amarillo}, \emph{pera}, \emph{azul verde}, \emph{purpura}, \emph{cian}, \emph{gris oscuro}, \emph{gris medio} y \emph{gris claro} (o del 1 al 10).}
+
+\item{nombre}{Si es TRUE devuelve el nombre del color al que corresponde el código hex}
 }
 \value{
 Paleta de colores institucionales para la Republica de Argentina

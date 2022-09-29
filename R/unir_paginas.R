@@ -48,11 +48,11 @@ unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
 
     temp <- tempfile()
 
-    download.file(topic_path, temp, method = "curl", quiet = T)
+    utils::download.file(topic_path, temp, method = "curl", quiet = T)
 
     temp_back <- tempfile()
 
-    download.file(ifelse(back_colour == "gris",
+    utils::download.file(ifelse(back_colour == "gris",
                          "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/contratapa.pdf",
                          "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/contra_tapa.pdf"), temp_back,
                   method = "curl", quiet = T)
