@@ -7,7 +7,6 @@
 #' @param logo_to_white Tranform logo color to white - logo must be SVG
 #' @param other_css Add an other CSS
 #' @param ... Arguments passed to pagedown::html_paged
-#'
 #' @return A pagedown template
 #' @export
 #'
@@ -79,7 +78,6 @@ template_informe <- function(logo = "0",
     front_cover = c(logo, front_img),
     back_cover = c(logo, back_img),
     toc = TRUE,
-    toc_depth = 2,
     ...
   )
 

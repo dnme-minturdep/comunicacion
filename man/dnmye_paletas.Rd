@@ -4,10 +4,10 @@
 \alias{dnmye_paletas}
 \title{Funcion para extraer colores de la dnmye como colores hex}
 \usage{
-dnmye_paletas(palette = "c10_todos", reverse = FALSE, ...)
+dnmye_paletas(palette = "cualitativa", reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Nombre de la paleta de colores en dnmye_paletas. Se puede optar por \emph{c2_continuo}, \emph{c2_contraste} o \emph{c10_todos}}
+\item{palette}{Nombre de la paleta de colores en dnmye_paletas. Se puede optar por \emph{cualitativa}, \emph{secuencial}, \emph{dicotomica}  o \emph{divergente}}
 
 \item{reverse}{\emph{TRUE} indica que la peleta debe ser invertida}
 

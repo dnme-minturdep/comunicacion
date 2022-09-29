@@ -25,3 +25,16 @@ test_that("Nombre de los valores de texto usados en dnmye_colores", {
   expect_true(dnmye_colores("gris medio") == "#AAAAAA")
   expect_true(dnmye_colores("gris claro") == "#E7E7E7")
 })
+
+test_that("Número de los colores usados en dnmye_colores", {
+  expect_true(dnmye_colores(1) == "#EE3D8F")
+  expect_true(dnmye_colores(2) == "#F7941E")
+  expect_true(dnmye_colores(3) == "#FFD100")
+  expect_true(dnmye_colores(4) == "#D7DF23")
+  expect_true(dnmye_colores(5) == "#50B8B1")
+  expect_true(dnmye_colores(6) == "#9283BE")
+  expect_true(dnmye_colores(7) == "#37BBED")
+  expect_true(dnmye_colores(8) == "#50535C")
+  expect_true(dnmye_colores(9) == "#AAAAAA")
+  expect_true(dnmye_colores(10) == "#E7E7E7")
+})
