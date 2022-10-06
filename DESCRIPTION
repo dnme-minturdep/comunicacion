@@ -35,6 +35,8 @@ Imports:
     xfun,
     magrittr,
     dplyr,
+    showtext,
+    sysfonts,
     purrr,
     staplr,
     pdftools
