@@ -31,7 +31,7 @@ unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
   } else if(topic == "eoh") {
     topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
   } else if(topic == "sector hotelero") {
-    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
+    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/sector_hotelero_ct.pdf"
   } else if(topic == "internacional") {
     topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/turismo_internacional_ct.pdf"
   } else if(topic == "interno") {
@@ -72,7 +72,7 @@ unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
     } else if(topic == "eoh") {
       topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
     } else if(topic == "sector hotelero") {
-      topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/encuesta_ocupacion_hotelera_ct.pdf"
+      topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/sector_hotelero_ct.pdf"
     } else if(topic == "internacional") {
       topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/turismo_internacional_ct.pdf"
     } else if(topic == "interno") {
