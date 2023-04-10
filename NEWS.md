@@ -1,3 +1,7 @@
+# comunicacion 0.0.0.9003
+
+* Se agrega la función `gt_theme_dnmye()` con un estilo predefinido para tablas gt.
+
 # comunicacion 0.0.0.9002
 
 * Se ajustan paletas de colores para las funciones `scale_fill_dnmye()` y `scale_color_dnmye()`, principalmente sacando los grises de paletas cualitativas y creando nuevos conjuntos como `cualitativa`, `secuencial`, `dicotomica` y `divergente`.
