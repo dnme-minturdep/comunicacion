@@ -1,3 +1,7 @@
+# comunicacion 0.0.0.9004
+
+* Fix función `gt_theme_dnmye()`: aplicar `fmt_numeric()` solo sobre variables numericas.
+
 # comunicacion 0.0.0.9003
 
 * Se agrega la función `gt_theme_dnmye()` con un estilo predefinido para tablas gt.
