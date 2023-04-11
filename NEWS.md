@@ -1,3 +1,8 @@
+# comunicacion 0.0.0.9005
+
+* Fix función `gt_theme_dnmye()`: aplicar `fmt_numeric()` después de `fmt_percent()`.
+
+
 # comunicacion 0.0.0.9004
 
 * Fix función `gt_theme_dnmye()`: aplicar `fmt_numeric()` solo sobre variables numericas.
