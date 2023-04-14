@@ -11,6 +11,10 @@ gt_theme_dnmye <- function(gt_table, var_total = NA){
                          align = "center",
                          columns = 2:ncol(data.frame(gt_table["_data"])))
 
+  gt_table <- gt::cols_align(gt_table,
+                             align = "left",
+                             columns = 1)
+
   gt_table <- gt::tab_options(gt_table,
                               data_row.padding = gt::px(8),
                               column_labels.font.weight = "bold")
@@ -22,8 +26,7 @@ gt_theme_dnmye <- function(gt_table, var_total = NA){
 
 
   gt_table <- gt::data_color(gt_table,
-                             columns = c(gt::starts_with(c("var_","part_","prop_","porc_",
-                                                           "variacion","participacion","proporcion","porcentaje"))),
+                             columns = c(gt::starts_with(c("var_","variacion"))),
                              apply_to = "text",
                              colors = scales::col_bin(
                                bins = c(-Inf, 0, Inf),
