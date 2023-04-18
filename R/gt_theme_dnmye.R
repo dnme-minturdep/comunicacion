@@ -19,7 +19,7 @@ gt_theme_dnmye <- function(gt_table, var_total = NA){
                               data_row.padding = gt::px(8),
                               column_labels.font.weight = "bold")
 
-  #gt_table <- gt::fmt_number(gt_table, columns = where(is.numeric), decimals = 0, dec_mark = ",", sep_mark = ".")
+  gt_table <- gt::fmt_number(gt_table, columns = where(is.numeric), decimals = 0, dec_mark = ",", sep_mark = ".")
   
   gt_table <- gt::fmt_percent(gt_table, columns = gt::starts_with(c("var_","part_","prop_","porc_",
                                                                     "variacion","participacion","proporcion","porcentaje")), decimals = 1, dec_mark = ",", sep_mark = ".")
