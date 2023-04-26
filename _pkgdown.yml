@@ -55,6 +55,13 @@ reference:
   desc: tabulados interactivos para dataset anidado
   contents:
   - 'rmdautotabs'
+- subtitle: Formatos de números
+  desc:
+  contents:
+  - 'lbl_int'
+  - 'lbl_decimal'
+  - 'lbl_percent'
+  - 'lbl_money'
 - subtitle: Set de datos
   desc:
   contents:

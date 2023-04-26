@@ -7,16 +7,16 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
+# ```{r, include = FALSE}
+# knitr::opts_chunk$set(
+#   collapse = TRUE,
+#   comment = "#>"
+# )
+# ```
 
-```{r setup}
-library(comunicacion)
-```
+# ```{r setup}
+# library(comunicacion)
+# ```
 
 La función `crear_informe()` genera un template con todos los estilos y elementos de comunicación institucional pre definidos para la producción de un nuevo documento. Entre sus parametros se puede definir un nombre y ruta de guardado `save_as` , opciones para abrir en el editor (por defecto `TRUE`).
 
