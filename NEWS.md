@@ -1,6 +1,6 @@
 # comunicacion 0.0.0.9007
 
-* Agrego funciones `lbl_int()`, `lbl_decimal()` y `lbl_percent()` para formatear números con separador "." para miles, "," para decimales y "%" para porcentajes.
+* Agrego funciones `lbl_int()`, `lbl_decimal()`, `lbl_percent()` y `lbl_money()` para formatear números con separador "." para miles y "," para decimales, además de "%" para porcentajes y "$" para moneda.
 * Fix formats integer y decimals en `gt_theme_dnmye()`.
 
 # comunicacion 0.0.0.9006
