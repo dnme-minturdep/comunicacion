@@ -1,3 +1,8 @@
+# comunicacion 0.0.0.9007
+
+* Agrego funciones `lbl_int()`, `lbl_decimal()` y `lbl_percent()` para formatear números con separador "." para miles, "," para decimales y "%" para porcentajes.
+* Fix formats integer y decimals en `gt_theme_dnmye()`.
+
 # comunicacion 0.0.0.9006
 
 * Agrega función `crear_presentacion()` con template {xaringan}
