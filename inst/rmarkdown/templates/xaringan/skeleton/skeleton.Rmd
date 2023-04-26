@@ -4,7 +4,7 @@ author:  "Dirección Nacional de Mercados y Estadística"
 output:
   xaringan::moon_reader:
     seal: false
-    css: ["footer_header.css","dnmye_theme.css"]
+    css: "dnmye_theme.css"
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -15,7 +15,7 @@ output:
 
 class:inverse, middle
 
-background-image: url(escudo_mintur_blanco.png)
+background-image: url(https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_mdtyd_blanco.png)
 background-position: 95% 95%
 background-size: 30%
 
@@ -39,14 +39,10 @@ background-size: 30%
 
 
 
-
-
-
-
 ```{r, echo=FALSE}
 library(xaringanExtra)
 # LOGO COLOR EN PAGs INTERNAS
-xaringanExtra::use_logo(image_url = "escudo_mintur_color.png", 
+xaringanExtra::use_logo(image_url = "https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_mdtyd_color.png", 
                         position = css_position(top = "1em", right = "1em"), 
                         height = "20%", width = "20%")
 # BARRA DE PROGRESO DE PRESENTACION
@@ -60,9 +56,7 @@ xaringanExtra::use_webcam()
 ```
 
 
-
-
-```{r dnmye_theme, include=FALSE, warning=FALSE, eval=FALSE}
+```{r dnmye_theme, include=FALSE, warning=FALSE, eval=TRUE}
 library(xaringanthemer) #EVAL FALSE
 library(comunicacion)
 style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
@@ -83,8 +77,6 @@ style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
 ```
 
 
-
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
@@ -98,6 +90,28 @@ knitr::opts_chunk$set(
   hiline = TRUE
 )
 ```
+
+
+```{css, echo=FALSE}
+div.my-footer {
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+}
+div.my-footer span {
+    font-size: 16px;
+    color: #3B4449;
+    position: absolute;
+    left: 15px;
+    bottom: 6px;
+}
+
+
+```
+
 
 ---
 

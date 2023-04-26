@@ -1,4 +1,4 @@
-# comunicacion 0.0.0.900
+# comunicacion 0.0.0.9006
 
 * Agrega función `crear_presentacion()` con template {xaringan}
 * Fix documentación `gt_theme_dnmye()`.
