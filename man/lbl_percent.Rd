@@ -4,12 +4,12 @@
 \alias{lbl_percent}
 \title{Función para formatear números porcentuales como texto}
 \usage{
-lbl_percent(x, decimales = 0.01)
+lbl_percent(x, decimales = 2)
 }
 \arguments{
 \item{x}{Número a formatear}
 
-\item{decimales}{Cantidad de decimales. El valor por default es 0.01 que recorta a 2 decimales}
+\item{decimales}{Cantidad de decimales expresado como numero entero. El valor por default es 2 que recorta a 2 decimales}
 }
 \description{
 Función para formatear números porcentuales como texto

@@ -4,12 +4,12 @@
 \alias{lbl_decimal}
 \title{Función para formatear números decimales como texto}
 \usage{
-lbl_decimal(x, decimales = 0.01)
+lbl_decimal(x, decimales = 2)
 }
 \arguments{
 \item{x}{Número a formatear}
 
-\item{decimales}{Cantidad de decimales. El valor por default es 0.01 que recorta a 2 decimales}
+\item{decimales}{Cantidad de decimales expresado como numero entero. El valor por default es 2. que recorta a 2 decimales}
 }
 \description{
 Función para formatear números decimales como texto
