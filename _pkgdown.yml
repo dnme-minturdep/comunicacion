@@ -59,7 +59,7 @@ reference:
   desc:
   contents:
   - 'lbl_int'
-  - 'lbl_decimals'
+  - 'lbl_decimal'
   - 'lbl_percent'
   - 'lbl_money'
 - subtitle: Set de datos
