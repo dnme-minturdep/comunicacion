@@ -59,4 +59,7 @@ reference:
   desc:
   contents:
   - 'toy_evyth'
-
+- title: internal
+  desc:
+  contents:
+  - 'template_informe'
