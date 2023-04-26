@@ -1,0 +1,404 @@
+---
+title: "SINTA"
+author:  "Dirección Nacional de Mercados y Estadística"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: ["footer_header.css","dnmye_theme.css"]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+class:inverse, middle
+
+background-image: url(escudo_mintur_blanco.png)
+background-position: 95% 95%
+background-size: 30%
+
+# Acá va un título
+
+### Y acá un subtitulo
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### Dirección Nacional de Mercados y Estadística<br>Subsecretaría de Desarrollo Estratégico
+
+
+
+
+
+
+
+
+```{r, echo=FALSE}
+library(xaringanExtra)
+# LOGO COLOR EN PAGs INTERNAS
+xaringanExtra::use_logo(image_url = "escudo_mintur_color.png", 
+                        position = css_position(top = "1em", right = "1em"), 
+                        height = "20%", width = "20%")
+# BARRA DE PROGRESO DE PRESENTACION
+xaringanExtra::use_progress_bar(color = comunicacion::dnmye_colores("cian"))
+# LAPIZ 
+xaringanExtra::use_scribble()
+# EXPLORADOR DE SLIDES
+xaringanExtra::use_tile_view()
+# HABILITAR WEBCAM
+xaringanExtra::use_webcam()
+```
+
+
+
+
+```{r dnmye_theme, include=FALSE, warning=FALSE, eval=FALSE}
+library(xaringanthemer) #EVAL FALSE
+library(comunicacion)
+style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
+                 # FONTS
+                  header_font_google = google_font('Encode Sans'),
+                  text_font_google   = google_font('Roboto'),
+                  code_font_google   = google_font('IBM Plex Mono'),
+                 # COLORES 
+                 base_color = dnmye_colores("cian"),
+                 code_inline_color = dnmye_colores("rosa"), 
+                 inverse_link_color = "#3B4449",
+                 background_color = "#FFFFFF",
+                 title_slide_background_image = "escudo_mintur_blanco.png", 
+                 title_slide_background_position = "95% 5%", 
+                 title_slide_background_size = "200px", footnote_color = "#3B4449", link_color = "3B4449",text_slide_number_font_size = "16px"
+                  
+                 )
+```
+
+
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE
+)
+```
+
+---
+
+layout: true
+
+<div class="my-footer"><span>DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA <a href="https://yvera.tur.ar/sinta"> - <b>www.yvera.tur.ar/sinta</a></b></span></div> 
+
+---
+
+
+## Tipografía
+
+El texto puede ser  **negrita**, _itálica_, ~~tachado~~, o `codigo_en_linea`.
+
+[Un link a otra filmina](#colores).
+
+### Lorem Ipsum
+
+Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
+Lacinia neque mollis nascetur neque urna velit bibendum. 
+Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
+
+- Dolor cubilia nostra nunc sodales
+
+- Consectetur aliquet mauris blandit
+
+- Ipsum dis nec porttitor urna sed
+
+
+---
+name: colores
+
+## Colores
+
+- <span style="color: var(--text-color)">Color de texto</span>
+
+- <span style="color: var(--header-color); font-family: var(--header-font-family);">Color de título</span>
+
+- <span style="color: var(--link-color)">Color de links</span>
+
+- <span style="color: var(--text-bold-color); font-weight: bold;">Color de negrita</span>
+
+- `color de codigo_en_linea`
+
+---
+
+
+# TITULO DESTACADO o 
+#SEPARADORES A DOS LINEAS  `#`
+
+## TITULO DE FILMINA `##`
+
+### SUB TITULO DE FIMLIMINA `###`
+
+#### Texto Destacado `####`
+
+Esto esto es texto normal. Solo usar encabezados del 1-4.
+
+
+---
+class: inverse center middle
+
+# SEPARADOR TEMATICO
+
+--
+
+```
+class: inverse center middle
+```
+UN [LINK]()
+---
+<br>
+
+## Bloques
+
+---
+<br>
+
+### Citas
+
+> Esto es una cita seguida de un título.
+>
+>  **Autor Importante (2022)**
+---
+<br>
+
+### Bloques de código
+
+#### R 
+
+```{r eval=T}
+datafile <- system.file("toy_evyth.rds", package = "comunicacion")
+toy_evyth <- readRDS(datafile)
+library(magrittr)
+toy_evyth %>%
+ dplyr::mutate(region_destino = factor(region_destino,
+                                       labels = c("Ciudad de Buenos Aires",
+                                                  "Provincia de Buenos Aires - Partidos del GBA",
+                                                  "Provincia de Buenos Aires - Resto", "Centro",
+                                                  "Litoral",
+                                                  "Norte", "Cuyo", "Patagonia"))) %>%
+ dplyr::group_by(anio, region_destino) %>%
+ dplyr::summarise(cantidad_personas = sum(pondera)) %>%
+ ggplot2::ggplot(ggplot2::aes(x = anio,
+                              y = cantidad_personas,
+                              fill = region_destino)) +
+ ggplot2::geom_col(position = ggplot2::position_dodge()) +
+ comunicacion::scale_fill_dnmye()-> plot_evyth
+```
+
+
+---
+<br>
+
+### + código R 
+
+```{r eval=FALSE}
+dplyr::starwars %>% dplyr::slice_sample(n = 4)
+```
+
+---
+<br>
+<br>
+<br>
+<br>
+<br>
+
+```{r message=TRUE}
+cli::cli_alert_success("Funciona!")
+```
+
+--
+
+```{r message=TRUE}
+message("Es solo un mensaje")
+```
+
+--
+
+```{r warning=TRUE}
+warning("Esto podría ser malo...")
+```
+
+--
+
+```{r error=TRUE}
+stop("Falló! Arreglame!!!")
+```
+
+
+---
+<br>
+
+## Tablas
+
+---
+<br>
+<br>
+<br>
+<br>
+
+```{r}
+tibble::as_tibble(mtcars)
+```
+
+---
+<br>
+<br>
+<br>
+<br>
+
+```{r}
+knitr::kable(head(mtcars), format = 'html')
+```
+
+---
+<br>
+<br>
+<br>
+<br>
+
+```{r}
+DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
+```
+
+---
+
+## Listas
+
+---
+<br>
+<br>
+<br>
+<br>
+
+.pull-left[
+####Lista sin ordenar:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+]
+
+.pull-right[
+
+#### Lista ordenada:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+]
+
+---
+
+### Anidada:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+---
+
+### Combinadndo los dos tipos de listas (ol , ul) 
+
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+  1. level 4 item (ol)
+  1. level 4 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+
+---
+
+
+## Plots
+
+---
+<br>
+<br>
+<br>
+<br>
+
+```{r plot-example}
+plot_evyth +
+  ggplot2::theme_void()
+```
+
+---
+layout: false
+
+
+## Imagenes y notas al pie
+
+<center><img src="https://octodex.github.com/images/labtocat.png" height="400px" /></center>
+
+.footnote[GitHub Octocat]
+
+
+---
+
+
+## 2 Img
+
+.pull-left[
+![](https://octodex.github.com/images/motherhubbertocat.png)
+]
+
+.pull-right[
+![](https://octodex.github.com/images/dinotocat.png)
+]
+
+
+---
+class:  center, middle
+
+# DNMyE
+
+Basado en código y ejemplos de:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+[remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
