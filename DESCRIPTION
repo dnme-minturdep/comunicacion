@@ -39,7 +39,8 @@ Imports:
     purrr,
     staplr,
     pdftools,
-    scales
+    scales, 
+    gt
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues
