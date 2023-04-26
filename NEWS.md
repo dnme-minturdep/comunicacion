@@ -1,3 +1,9 @@
+# comunicacion 0.0.0.900
+
+* Agrega función `crear_presentacion()` con template {xaringan}
+* Fix documentación `gt_theme_dnmye()`.
+
+
 # comunicacion 0.0.0.9005
 
 * Fix función `gt_theme_dnmye()`: aplicar `fmt_numeric()` después de `fmt_percent()`.
