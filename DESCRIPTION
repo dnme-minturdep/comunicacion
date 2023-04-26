@@ -42,7 +42,7 @@ Imports:
     scales, 
     xaringan,
     xaringanthemer,
-    xaringanExtra
+    xaringanExtra,
     gt
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
