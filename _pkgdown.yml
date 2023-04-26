@@ -26,5 +26,40 @@ home:
   links:
   - text: Sistema de Información Turística de la Argentina
     href: https://www.yvera.tur.ar/sinta/
-
-
+reference:
+- title: Templates
+  desc: Funciones para generar documentos.
+- subtitle: Presentaciones con {xaringan}
+  contents:
+  - 'crear_presentacion'
+- subtitle: Informes PDF con {pagedown}
+  contents:
+  - 'crear_informe'
+  - 'unir_paginas'
+- title: Funciones para Gráficos y Tablas
+  desc:
+- subtitle: Colores
+  contents:
+  - 'dnmye_colores'
+  - 'dnmye_paletas'
+- subtitle: Auxiliares para {ggplot2}
+  contents:
+  - 'scale_color_dnmye'
+  - 'scale_fill_dnmye'
+- subtitle: Tabulados con {gt}
+  contents:
+  - 'gt_theme_dnmye'
+- title: Other
+  desc:
+- subtitle: Recursos para .Rmd
+  desc: tabulados interactivos para dataset anidado
+  contents:
+  - 'rmdautotabs'
+- subtitle: Set de datos
+  desc:
+  contents:
+  - 'toy_evyth'
+- title: internal
+  desc:
+  contents:
+  - 'template_informe'

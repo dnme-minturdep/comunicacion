@@ -22,20 +22,28 @@ devtools::install_github("dnme-minturdep/comunicacion")
 
 ## Funciones
 
--   **`crear_informe()`**: Función para crear y abrir un template de
-    informes para la DNMyE
+-   **`crear_informe()`**: Función para crear y abrir un *template* de
+    informes para la DNMYE
 
--   **`dnmye_colores()`**: Funcion para extraer los colores
-    institucionales de la dnmye como colores hex
+-   **`crear_presentacion()`**: Función para crear y abrir un *template*
+    de presentaciones para la DNMYE
 
--   **`dnmye_paletas()`**: Funcion para extraer paletas de colores
-    colores institucionales de la dnmye como colores hex
+-   **`dnmye_colores()`**: Función para extraer los colores
+    institucionales de la DNMYE como colores HEX
+
+-   **`dnmye_paletas()`**: Función para extraer paletas de colores
+    colores institucionales de la DNMYE como colores HEX
 
 -   **`scale_color_dnmye()`**: Constructor de escala de colores de
-    contorno (argumento color) para la dnmye
+    contorno (argumento color) con estética de la DNMYE para gráficos
+    generados con `{ggplot2}` y su *gramática de gráficos*
 
 -   **`scale_fill_dnmye()`**: Constructor de escala de colores de
-    relleno (argumento fill) para la dnmye
+    relleno (argumento `fill`) con estética de la DNMYE para gráficos
+    generados con `{ggplot2}` y su *gramática de gráficos*
+
+-   **`gt_theme_dnmye()`**: Tema personalizado con estética de la DNMYE
+    para tabulados generados con `{gt}` y su *gramática de tablas*-
 
 -   **`rmdautotabs()`**: Permite generar automáticamente el código
     necesario para agrupar múltiples fragmentos de Rmarkdown en

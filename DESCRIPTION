@@ -40,6 +40,9 @@ Imports:
     staplr,
     pdftools,
     scales, 
+    xaringan,
+    xaringanthemer,
+    xaringanExtra,
     gt
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
