@@ -1,7 +1,7 @@
 #' Función para formatear números decimales como texto
 #'
 #' @param x Número a formatear
-#' @param decimales Cantidad de decimales expresado como numero entero. El valor por default es 2. que recorta a 2 decimales
+#' @param decimales Cantidad de decimales expresado como numero entero. El valor por default es 1 que recorta a 1 decimal.
 #'
 #' @export
 
