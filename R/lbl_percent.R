@@ -5,7 +5,7 @@
 #'
 #' @export
 
-lbl_percent <- function(x, decimales = 2) {
+lbl_percent <- function(x, decimales = 1) {
 
   scales::label_percent(accuracy = 1/(10^decimales), big.mark = ".", decimal.mark = ",")(x)
 

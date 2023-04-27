@@ -5,7 +5,7 @@
 #'
 #' @export
 
-lbl_decimal <- function(x, decimales = 2) {
+lbl_decimal <- function(x, decimales = 1) {
 
   scales::label_number(accuracy = 1/(10^decimales), big.mark = ".", decimal.mark = ",")(x)
 
