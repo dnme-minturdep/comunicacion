@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">comunicacion</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9006</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9007</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">lbl_money</span><span class="op">(</span><span class="va">x</span>, decimales <span class="op">=</span> <span class="fl">1</span>, escala <span class="op">=</span> <span class="fl">1</span>, sufijo <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">lbl_money</span><span class="op">(</span><span class="va">x</span>, decimales <span class="op">=</span> <span class="fl">0</span>, dolar <span class="op">=</span> <span class="cn">F</span>, escala <span class="op">=</span> <span class="fl">1</span>, sufijo <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -67,15 +67,19 @@
 
 
 <dt>decimales</dt>
-<dd><p>Cantidad de decimales. El valor por default es 1 que no muestra decimales</p></dd>
+<dd><p>Cantidad de decimales expresado como numero entero. El valor por default es 0 que no muestra decimales.</p></dd>
+
+
+<dt>dolar</dt>
+<dd><p>Lógico. Si es F (default) usa el prefijo '$', si es T usa prefijo 'US$'.</p></dd>
 
 
 <dt>escala</dt>
-<dd><p>Valor para dividir el número a formatear, por ejemplo, en caso de querer expresar el resultado en miles se pone 1000</p></dd>
+<dd><p>Número entero para dividir el número a formatear. Por ejemplo, en caso de querer expresar el resultado en miles se pone 1000</p></dd>
 
 
 <dt>sufijo</dt>
-<dd><p>Texto a agregar como sufijo</p></dd>
+<dd><p>Texto a agregar como sufijo, por ejemplo 'M', 'm', etc. Default es NULL que no agrega sufijo.</p></dd>
 
 </dl></div>
 
