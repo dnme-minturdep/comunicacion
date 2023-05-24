@@ -21,7 +21,7 @@ crear_presentacion<- function(template = "skeleton.Rmd",
                           open = TRUE,
                           package = "comunicacion") {
 
-  template_contents <- render_template(template, data, package = package)
+  template_contents <- render_template_ppt(template, data, package = package)
 
   new <- usethis::write_over(usethis::proj_path(save_as), template_contents)
 
@@ -36,12 +36,12 @@ crear_presentacion<- function(template = "skeleton.Rmd",
   base::invisible(new)
 }
 
-render_template <- function(template, data = list(), package = "comunicacion") {
-  template_path <- find_template(template, package = package)
+render_template_ppt <- function(template, data = list(), package = "comunicacion") {
+  template_path <- find_template_ppt(template, package = package)
   base::strsplit(whisker::whisker.render(xfun::read_utf8(template_path), data), "\n")[[1]]
 }
 
-find_template <- function(template_name, package = "comunicacion") {
+find_template_ppt <- function(template_name, package = "comunicacion") {
   rlang::check_installed(package)
   path <- tryCatch(
     fs::path_package(package = package, "rmarkdown/templates/xaringan/skeleton/", template_name),
