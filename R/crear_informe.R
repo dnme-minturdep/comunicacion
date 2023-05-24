@@ -36,7 +36,6 @@ crear_informe <- function(template = "skeleton.Rmd",
 
   base::invisible(new)
 }
-#' @export
 
 render_template_doc <- function(template, data = list(), package = "comunicacion") {
   template_path <- find_template_doc(template, package = package)
