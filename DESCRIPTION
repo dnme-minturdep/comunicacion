@@ -40,9 +40,9 @@ Imports:
     dplyr,
     sysfonts,
     purrr,
-    staplr,
+    staplr (== 3.1.1),
     pdftools,
-    scales, 
+    scales,
     gt,
     tidyselect
 URL: https://github.com/dnme-minturdep/comunicacion,
