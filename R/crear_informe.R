@@ -39,11 +39,11 @@ crear_informe <- function(template = "skeleton.Rmd",
 #' @export
 
 render_template <- function(template, data = list(), package = "comunicacion") {
-  template_path <- find_template(template, package = package)
+  template_path <- find_template_doc(template, package = package)
   base::strsplit(whisker::whisker.render(xfun::read_utf8(template_path), data), "\n")[[1]]
 }
 
-find_template <- function(template_name, package = "comunicacion") {
+find_template_doc <- function(template_name, package = "comunicacion") {
   rlang::check_installed(package)
   path <- tryCatch(
     fs::path_package(package = package, "rmarkdown/templates/paged/skeleton/", template_name),
