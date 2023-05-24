@@ -22,7 +22,7 @@ crear_informe <- function(template = "skeleton.Rmd",
                          open = TRUE,
                          package = "comunicacion") {
 
-  template_contents <- render_template(template, data, package = package)
+  template_contents <- render_template_doc(template, data, package = package)
 
   new <- usethis::write_over(usethis::proj_path(save_as), template_contents)
 
@@ -38,7 +38,7 @@ crear_informe <- function(template = "skeleton.Rmd",
 }
 #' @export
 
-render_template <- function(template, data = list(), package = "comunicacion") {
+render_template_doc <- function(template, data = list(), package = "comunicacion") {
   template_path <- find_template_doc(template, package = package)
   base::strsplit(whisker::whisker.render(xfun::read_utf8(template_path), data), "\n")[[1]]
 }
