@@ -40,7 +40,6 @@ Imports:
     dplyr,
     sysfonts,
     purrr,
-    staplr (== 3.1.1),
     pdftools,
     scales,
     gt,
@@ -52,3 +51,5 @@ Depends:
     R (>= 3.5.0)
 LazyData: true
 VignetteBuilder: knitr
+Remotes:  
+    pridiltal/staplr
