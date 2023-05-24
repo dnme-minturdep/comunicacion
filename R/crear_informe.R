@@ -14,6 +14,7 @@
 #'   crear_informe(save_as = "informe.Rmd",
 #'                open = TRUE)
 #' }
+
 crear_informe <- function(template = "skeleton.Rmd",
                          save_as = template,
                          data = list(),
@@ -35,6 +36,7 @@ crear_informe <- function(template = "skeleton.Rmd",
 
   base::invisible(new)
 }
+#' @export
 
 render_template <- function(template, data = list(), package = "comunicacion") {
   template_path <- find_template(template, package = package)
@@ -55,4 +57,7 @@ find_template <- function(template_name, package = "comunicacion") {
   }
   path
 }
+
+
+
 
