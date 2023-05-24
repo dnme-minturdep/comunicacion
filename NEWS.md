@@ -1,6 +1,10 @@
-# comunicacion 0.0.0.9008
+# comunicacion 0.0.0.9009
 
 * Arreglado bug que mezclaba template de informe y de presentacion.
+
+# comunicacion 0.0.0.9008
+
+* Fix orden de formats y decimales en `gt_theme_dnmye()`.
 
 # comunicacion 0.0.0.9007
 
