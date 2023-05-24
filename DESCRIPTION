@@ -43,7 +43,8 @@ Imports:
     pdftools,
     scales,
     gt,
-    tidyselect
+    tidyselect,
+    staplr (>= 3.1.1)
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues
@@ -51,5 +52,5 @@ Depends:
     R (>= 3.5.0)
 LazyData: true
 VignetteBuilder: knitr
-Remotes:  
+Remotes: 
     pridiltal/staplr
