@@ -1,6 +1,6 @@
 Package: comunicacion
 Title: DNMyE - Comunicación
-Version: 0.0.0.9009
+Version: 0.0.0.9010
 Authors@R: c(
     person("Pablo", "Tiscornia", , "ptiscornia@turismo.gob.ar", role = c("aut")),
     person("Juan", "Juara", , "jgjuara@turismo.gob.ar", role = c("aut")),
@@ -44,7 +44,9 @@ Imports:
     scales,
     gt,
     tidyselect,
-    staplr (>= 3.2.1)
+    staplr
+Remotes: 
+    pridiltal/staplr
 URL: https://github.com/dnme-minturdep/comunicacion,
     https://dnme-minturdep.github.io/comunicacion/
 BugReports: https://github.com/dnme-minturdep/comunicacion/issues
