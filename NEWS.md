@@ -1,3 +1,7 @@
+# comunicacion 0.0.0.9010
+
+* Elimino espacio entre signos `$/U$S`y numero en `lbl_money`
+
 # comunicacion 0.0.0.9009
 
 * Arreglado bug que mezclaba template de informe y de presentacion.
