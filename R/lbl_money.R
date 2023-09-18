@@ -14,7 +14,7 @@ lbl_money <- function(x, decimales = 0, dolar = F, escala = 1, sufijo = NULL) {
       accuracy = 1 / (10 ^ decimales),
       big.mark = ".",
       decimal.mark = ",",
-      prefix = ifelse(dolar, "US$", "$"),
+      prefix = ifelse(dolar, "US$ ", "$"),
       scale = 1 / escala,
       suffix = ifelse(is.null(sufijo), "", paste0(" ", sufijo))
     )(x)
