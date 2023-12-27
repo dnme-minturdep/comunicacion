@@ -2,8 +2,7 @@
 title: "Título del informe"
 #subtitle: "Subtítulo del informe"
 author: |
-  | Dirección Nacional de Mercados y Estadística
-  | **SUBSECRETARÍA DE DESARROLLO ESTRATÉGICO**
+  | Sistema de Información Turística de la Argentina
 date: "acalafecha"
 output:
   comunicacion::template_informe
