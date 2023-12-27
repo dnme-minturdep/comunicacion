@@ -89,7 +89,7 @@ unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
     #   topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/generico_st.pdf"
     # }
 
-    topic_path <- "https://tableros.yvera.tur.ar/recursos/hojas_institucionales/segunda_hoja.pdf"
+    topic_path <- "/srv/shiny-server/recursos/hojas_institucionales/segunda_hoja.pdf"
 
     suppressWarnings(staplr::staple_pdf(input_files = c("cover.pdf",
                                                         topic_path,
