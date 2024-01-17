@@ -14,7 +14,7 @@
 #' }
 #' @export
 
-unir_paginas <- function(input, save_as, topic, back_colour = "gris") {
+unir_paginas <- function(input, save_as, topic = "", back_colour = "gris") {
 
   staplr::select_pages(1, input_filepath = input, output_filepath = "cover.pdf")
 
