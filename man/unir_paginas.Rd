@@ -4,7 +4,7 @@
 \alias{unir_paginas}
 \title{Función para agregar hojas institucionales a los informes generados con el template de la DNMyE}
 \usage{
-unir_paginas(input, save_as, topic, back_colour = "gris")
+unir_paginas(input, save_as, topic = "generico")
 }
 \arguments{
 \item{input}{Ruta con el PDF del informe}
@@ -12,8 +12,6 @@ unir_paginas(input, save_as, topic, back_colour = "gris")
 \item{save_as}{Nombre y ruta del informe a guardar}
 
 \item{topic}{Tema del informe. Puede ser: "calidad", "competitividad hotelera", "eoh", "sector hotelero", "internacional", "interno", "inversiones", "naturaleza", "naturaleza apn" o "generico"}
-
-\item{back_colour}{Color de la contratapa. Puede ser "gris" (default) o "celeste"}
 }
 \description{
 Función para agregar hojas institucionales a los informes generados con el template de la DNMyE
@@ -22,8 +20,7 @@ Función para agregar hojas institucionales a los informes generados con el temp
 \dontrun{
   unir_paginas(input = "eoh.pdf",
    save_as = "informe_eoh_junio_2022.pdf",
-   topic = "eoh",
-   back_colour = "gris"
+   topic = "eoh"
  )
 }
 }
