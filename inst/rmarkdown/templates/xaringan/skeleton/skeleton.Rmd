@@ -15,9 +15,9 @@ output:
 
 class:inverse, middle
 
-background-image: url(https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_mdtyd_blanco.png)
+background-image: url(https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_interior_blanco.png)
 background-position: 95% 95%
-background-size: 30%
+background-size: 20%
 
 # Acá va un título
 
@@ -34,7 +34,7 @@ background-size: 30%
 <br>
 <br>
 
-### Dirección Nacional de Mercados y Estadística<br>Subsecretaría de Desarrollo Estratégico
+### Dirección Nacional de Mercados y Estadística<br>Subsecretaría de Turismo
 
 
 
@@ -42,11 +42,11 @@ background-size: 30%
 ```{r, echo=FALSE}
 library(xaringanExtra)
 # LOGO COLOR EN PAGs INTERNAS
-xaringanExtra::use_logo(image_url = "https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_mdtyd_color.png", 
+xaringanExtra::use_logo(image_url = "https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_interior_negro.png", 
                         position = css_position(top = "1em", right = "1em"), 
-                        height = "20%", width = "20%")
+                        height = "15%", width = "15%")
 # BARRA DE PROGRESO DE PRESENTACION
-xaringanExtra::use_progress_bar(color = comunicacion::dnmye_colores("cian"))
+xaringanExtra::use_progress_bar(color = "#252C4F")
 # LAPIZ 
 xaringanExtra::use_scribble()
 # EXPLORADOR DE SLIDES
@@ -65,7 +65,7 @@ style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
                   text_font_google   = google_font('Roboto'),
                   code_font_google   = google_font('IBM Plex Mono'),
                  # COLORES 
-                 base_color = dnmye_colores("cian"),
+                 base_color = "#252C4F",
                  code_inline_color = dnmye_colores("rosa"), 
                  inverse_link_color = "#3B4449",
                  background_color = "#FFFFFF",
