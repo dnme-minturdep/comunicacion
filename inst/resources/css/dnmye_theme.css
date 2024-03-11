@@ -44,20 +44,20 @@
 
   /* Colors */
   --text-color: #2682A5;
-  --header-color: #37BBED;
+  --header-color: #252C4F;
   --background-color: #FFFFFF;
   --link-color: 3B4449;
-  --text-bold-color: #37BBED;
+  --text-bold-color: #252C4F;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #EBF8FD;
-  --inverse-background-color: #37BBED;
+  --inverse-background-color: #252C4F;
   --inverse-header-color: #EBF8FD;
   --inverse-link-color: #3B4449;
-  --title-slide-background-color: #37BBED;
+  --title-slide-background-color: #252C4F;
   --title-slide-text-color: #EBF8FD;
-  --header-background-color: #37BBED;
+  --header-background-color: #252C4F;
   --header-background-text-color: #FFFFFF;
-  --base: #37BBED;
+  --base: #252C4F;
   --white: #EBF8FD;
   --black: #2682A5;
 }
@@ -103,7 +103,7 @@ h1, h2, h3 {
   color: #EE3D8F;
 }
 .remark-slide-number {
-  color: #37BBED;
+  color: #252C4F;
   opacity: 1;
   font-size: 16px;
 }
@@ -128,7 +128,7 @@ a, a > code {
 .inverse {
   background-color: var(--inverse-background-color);
   color: var(--inverse-text-color);
-  
+
 }
 .inverse h1, .inverse h2, .inverse h3 {
   color: var(--inverse-header-color);
@@ -141,7 +141,7 @@ a, a > code {
 }
 .title-slide {
   background-color: var(--title-slide-background-color);
-  background-image: url("escudo_mintur_blanco.png");
+  background-image: url("escudo.png");
   background-size: 200px;
   background-position: 95% 5%;
 }
@@ -155,10 +155,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #37BBED99;
+  color: #252C4F99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #37BBED;
+  color: #252C4F;
 }
 .right-column {
   width: 75%;
@@ -180,7 +180,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #37BBED80;
+  border-left: solid 5px #252C4F80;
   padding-left: 1em;
 }
 .remark-slide table {
