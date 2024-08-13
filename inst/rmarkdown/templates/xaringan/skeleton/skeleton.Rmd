@@ -15,9 +15,9 @@ output:
 
 class:inverse, middle
 
-background-image: url(https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_interior_blanco.png)
+background-image: url(https://tableros.yvera.tur.ar/recursos/logos_institucionales/sec_turismo_blanco.png)
 background-position: 95% 95%
-background-size: 20%
+background-size: 30%
 
 # Acá va un título
 
@@ -32,9 +32,8 @@ background-size: 20%
 <br>
 <br>
 <br>
-<br>
 
-### Dirección Nacional de Mercados y Estadística<br>Subsecretaría de Turismo
+### Dirección Nacional de Mercados y Estadística
 
 
 
@@ -42,7 +41,7 @@ background-size: 20%
 ```{r, echo=FALSE}
 library(xaringanExtra)
 # LOGO COLOR EN PAGs INTERNAS
-xaringanExtra::use_logo(image_url = "https://tableros.yvera.tur.ar/recursos/logos_institucionales/escudo_interior_negro.png", 
+xaringanExtra::use_logo(image_url = "https://tableros.yvera.tur.ar/recursos/logos_institucionales/sec_turismo_azul.png", 
                         position = css_position(top = "1em", right = "1em"), 
                         height = "15%", width = "15%")
 # BARRA DE PROGRESO DE PRESENTACION
@@ -61,15 +60,15 @@ library(xaringanthemer) #EVAL FALSE
 library(comunicacion)
 style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
                  # FONTS
-                  header_font_google = google_font('Encode Sans'),
-                  text_font_google   = google_font('Roboto'),
+                  header_font_google = google_font('Lora'),
+                  text_font_google   = google_font('Montserrat'),
                   code_font_google   = google_font('IBM Plex Mono'),
                  # COLORES 
                  base_color = "#252C4F",
                  code_inline_color = dnmye_colores("rosa"), 
                  inverse_link_color = "#3B4449",
                  background_color = "#FFFFFF",
-                 title_slide_background_image = "escudo_mintur_blanco.png", 
+                 title_slide_background_image = "sec_turismo_blanco.png", 
                  title_slide_background_position = "95% 5%", 
                  title_slide_background_size = "200px", footnote_color = "#3B4449", link_color = "3B4449",text_slide_number_font_size = "16px"
                   
