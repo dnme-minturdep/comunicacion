@@ -11,13 +11,13 @@
     --color-mbox: rgba(0, 0, 0, 0.2);
     --running-title-width: 2in;
     --screen-pages-spacing: 5mm;
-    --main-color: #37BBED;
+    --main-color: #252C4F;
     --second-color: #50535C;
     --third-color: #AAAAAA;
     --forth-color: #50535C;
-    --main-font: "Roboto";
-    --header-font: "Encode Sans Normal";
-    --toc-font: "Roboto";
+    --main-font: "Montserrat";
+    --header-font: "Lora";
+    --toc-font: "Montserrat";
   }
 
 /* ---------------------- For debugging -------------------- */
@@ -129,7 +129,7 @@
     background-repeat: no-repeat, no-repeat;
     /*background-position: 8cm 25cm, 0cm 0cm;*/
     background-position: 50% 90%, 0cm 0cm;
-    background-size: 15cm, cover;
+    background-size: 15cm, cover; /*tamaño logo tapa*/
 
     @top-left-corner {
       display: none;

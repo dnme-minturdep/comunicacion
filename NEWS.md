@@ -1,3 +1,7 @@
+# comunicacion 0.0.0.9011
+
+* Actualizo logos y colores institucionales
+
 # comunicacion 0.0.0.9010
 
 * Elimino espacio entre signos `$/U$S`y numero en `lbl_money`
