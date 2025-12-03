@@ -64,13 +64,13 @@
 
 
 /* normal page */
-@page {
+/*@page {
 
 @top-center {
     content: url("../img/logo_pagedown.png");
   }
 
-}
+}*/
 
 /* counter */
 @page:left {
@@ -226,7 +226,7 @@
   padding-top: 0cm;
   padding-bottom: 0cm;
   background-color: transparent;
-  background-image: url(../utils/portada_hoja2.png);
+  /* background-image: url(../utils/portada_hoja2.png);*/
   text-align: left;
   margin-right: 0%;
   margin-left: 0%;

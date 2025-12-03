@@ -1,6 +1,6 @@
 ---
 title: "SINTA"
-author:  "Dirección Nacional de Mercados y Estadística"
+author:  "Dirección de Mercados y Estadísticas"
 output:
   xaringan::moon_reader:
     seal: false
