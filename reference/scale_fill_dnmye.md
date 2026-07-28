@@ -55,6 +55,10 @@ toy_evyth %>%
                               fill = region_destino)) +
  ggplot2::geom_col(position = ggplot2::position_dodge()) +
  scale_fill_dnmye(palette = "cualitativa", discrete = TRUE)
-#> `summarise()` has grouped output by 'anio'. You can override using the
-#> `.groups` argument.
+#> `summarise()` has regrouped the output.
+#> ℹ Summaries were computed grouped by anio and region_destino.
+#> ℹ Output is grouped by anio.
+#> ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+#> ℹ Use `summarise(.by = c(anio, region_destino))` for per-operation grouping
+#>   (`?dplyr::dplyr_by`) instead.
 ```

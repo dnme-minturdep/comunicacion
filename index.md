@@ -11,6 +11,7 @@ Nación](https://www.argentina.gob.ar/turismoydeportes).
 Versión en desarrollo:
 
 ``` r
+
 devtools::install_github("dnme-minturdep/comunicacion", upgrade = F)
 ```
 
@@ -56,6 +57,7 @@ Estos son ejemplos básicos sobre cómo utilizar las funciones de la
 librería:
 
 ``` r
+
 library(comunicacion)
 
 # Obtengo la paleta completa
@@ -78,6 +80,7 @@ Presidencia la Nación.
 ![](reference/figures/paleta_institucional_2.png)
 
 ``` r
+
 # Explorar paleta de colores institucionales
 
 scales::show_col(dnmye_colores())

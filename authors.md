@@ -19,14 +19,14 @@
 Source:
 [`DESCRIPTION`](https://github.com/dnme-minturdep/comunicacion/blob/master/DESCRIPTION)
 
-Tiscornia P, Juara J, Soutullo E, Ruiz Nicolini J (2025). *comunicacion:
+Tiscornia P, Juara J, Soutullo E, Ruiz Nicolini J (2026). *comunicacion:
 DNMyE - Comunicación*. R package version 0.0.0.9012,
 <https://github.com/dnme-minturdep/comunicacion>.
 
     @Manual{,
       title = {comunicacion: DNMyE - Comunicación},
       author = {Pablo Tiscornia and Juan Juara and Elián Soutullo and Juan Pablo {Ruiz Nicolini}},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.0.0.9012},
       url = {https://github.com/dnme-minturdep/comunicacion},
     }
